@@ -16,7 +16,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <!--<div v-if="main.body" class="margin_60" v-html="main.body"></div>-->
+                            <div v-if="main.body" class="margin_60" v-html="main.body"></div>
                         </div>
                     </div>
                     <div class="row">
@@ -116,9 +116,9 @@
                     if (response[0].data) {
                         this.main = response[0].data
                     }
-                    if (response[0].data.subpages[0]) {
-                        this.contactInfo = response[0].data.subpages[0];
-                    }
+                    // if (response[0].data.subpages[0]) {
+                    //     this.contactInfo = response[0].data.subpages[0];
+                    // }
                     
                     this.dataLoaded = true;
                 });
