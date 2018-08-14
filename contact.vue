@@ -112,7 +112,7 @@
                             "image_url": "//codecloud.cdn.speedyrails.net/sites/5b71e1b46e6f641211090000/image/jpeg/1529532304000/insidebanner2.jpg"
                         }
                     }
-                    console.log(response)
+
                     if (response[0].data) {
                         this.main = response[0].data
                     }
