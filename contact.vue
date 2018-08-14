@@ -116,9 +116,9 @@
                     if (response[0].data) {
                         this.main = response[0].data
                     }
-                    if (response[0].data.subpages[0]) {
-                        this.contactInfo = response[0].data.subpages[0];
-                    }
+                    // if (response[0].data.subpages[0]) {
+                    //     this.contactInfo = response[0].data.subpages[0];
+                    // }
                     
                     this.dataLoaded = true;
                 });
