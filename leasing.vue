@@ -66,24 +66,24 @@
             },
             created() {
                 this.loadData().then(response => {
-                    // var temp_repo = this.findRepoByName('Leasing Banner').images;
-                    // if(temp_repo != null) {
-                    //     this.pageBanner = temp_repo[0];
-                    // } else {
-                    //     this.pageBanner = {
-                    //         "image_url": "//codecloud.cdn.speedyrails.net/sites/5b71e1b46e6f641211090000/image/jpeg/1529532304000/insidebanner2.jpg"
-                    //     }
-                    // }
+                    var temp_repo = this.findRepoByName('Leasing Banner').images;
+                    if(temp_repo != null) {
+                        this.pageBanner = temp_repo[0];
+                    } else {
+                        this.pageBanner = {
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5b71e1b46e6f641211090000/image/jpeg/1529532304000/insidebanner2.jpg"
+                        }
+                    }
                     
                     // var temp_repo1 = this.findRepoByName('Leasing Booklet');
                     // if(temp_repo1) {
                     //     this.leasingBooklet = temp_repo1.images[0].image_url;
                     // }
 
-                    // var temp_repo2 = this.findRepoByName('Leasing Images');
-                    // if(temp_repo2) {
-                    //     this.pageImages = temp_repo2.images;
-                    // }
+                    var temp_repo2 = this.findRepoByName('Leasing Images');
+                    if(temp_repo2) {
+                        this.pageImages = temp_repo2.images;
+                    }
 
                     this.main = response[1].data;
                     this.leasingInfo = response[1].data.subpages
