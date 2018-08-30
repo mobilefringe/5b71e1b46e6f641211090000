@@ -301,10 +301,10 @@ a {
                     color: #FFF;
                     text-decoration: underline;
                 }
-            // 	&:hover, &:active, &:focus, &:visited {
-            // 	    background: $primary;
-            // 	    color: $secondary;
-            // 	}
+            	&:hover, &:active, &:focus, &:visited {
+            	    background: $secondary;
+            	   // color: $secondary;
+            	}
             }
         }
     }
