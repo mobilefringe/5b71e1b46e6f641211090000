@@ -121,32 +121,38 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                         sub_menu: [
                             {
                                 name: "Center Information",
-                                href: "/center-information"
+                                href: "/center-information",
+                                target: false
                             },
                             {
                                 name: "Contact Us",
-                                href: "/contact-us"
+                                href: "/contact-us",
+                                target: false
                             },
                             {
                                 name: "Leasing",
-                                href: "/leasing"
+                                href: "/leasing",
+                                target: false
                             },
                             {
                                 name: "Partners",
-                                href: "/pages/greenvalley-partners"
+                                href: "/pages/greenvalley-partners",
+                                target: false
                             },
                             {
                                 name: "Videos",
-                                href: "/pages/greenvalley-videos"
+                                href: "/pages/greenvalley-videos",
+                                target: false
                             },
                             {
                                 name: "Newsletter Sign Up",
-                                href: "/newsletter"
+                                href: "/newsletter",
+                                target: false
                             },
                             {
                                 name: "",
                                 href: "https://www.mallmaverick.com/system/site_images/photos/000/042/559/original/The_District_at_Green_Valley_Ranch_Non-Profit_Donation_Form.pdf?1535656749",
-                                target: "true"
+                                target: true
                             }
                         ]
                     }
