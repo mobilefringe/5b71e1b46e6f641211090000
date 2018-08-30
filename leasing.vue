@@ -69,15 +69,15 @@
                         }
                     }
                     
-                    var temp_repo1 = this.findRepoByName('Leasing Booklet');
-                    if(temp_repo1) {
-                        this.leasingBooklet = temp_repo1.images[0].image_url;
-                    }
+                    // var temp_repo1 = this.findRepoByName('Leasing Booklet');
+                    // if(temp_repo1) {
+                    //     this.leasingBooklet = temp_repo1.images[0].image_url;
+                    // }
 
-                    var temp_repo2 = this.findRepoByName('Leasing Images');
-                    if(temp_repo2) {
-                        this.pageImages = temp_repo2.images;
-                    }
+                    // var temp_repo2 = this.findRepoByName('Leasing Images');
+                    // if(temp_repo2) {
+                    //     this.pageImages = temp_repo2.images;
+                    // }
 
                     this.main = response[1].data;
                     this.leasingInfo = response[1].data.subpages[0]
@@ -95,7 +95,7 @@
                 loadData: async function () {
                     this.property.mm_host = this.property.mm_host.replace("http:", "");
                     try {
-                        let results = await Promise.all([this.$store.dispatch("getData", "repos"), this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "	/pages/greenvalley-leasing.json"})]);
+                        let results = await Promise.all([this.$store.dispatch("getData", "repos"), this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "/pages/greenvalley-leasing.json"})]);
                         return results;
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
