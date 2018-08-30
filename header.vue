@@ -27,8 +27,8 @@
     						        <span v-if="item.sub_menu != undefined">{{ item.name }}</span>
     						        <ul v-if="item.sub_menu">
     						            <li v-for="sub_menu in item.sub_menu" class="dropdown_item">
-    						                <a v-if="sub_menu.target" :href="sub_menu.href" target="_blank">{{ sub_menu.name }}</a>
-    						                <router-link v-else :to="sub_menu.href">{{ sub_menu.name }}</router-link>
+    						                <!--<a v-if="sub_menu.target" :href="sub_menu.href" target="_blank">{{ sub_menu.name }}</a>-->
+    						                <router-link  :to="sub_menu.href">{{ sub_menu.name }}</router-link>
     						            </li>
     								</ul>
     						    </li>
