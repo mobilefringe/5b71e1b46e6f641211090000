@@ -5,7 +5,7 @@
 /* *** COLOURS *** */
 // $primary: #329c9c;
 $primary: #3b8178;
-$secondary: #FF842D;
+$secondary: #ff974e;
 $text: #000;
 
 /* *** GENERAL STYLES *** */
@@ -377,7 +377,7 @@ a {
             font-size: 1rem;
             line-height: 1rem;
             // color: $secondary;
-            color: #555;
+            color: #444;
             text-transform: uppercase;
             transition: all 0.3s ease;
             &:before {
