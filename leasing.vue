@@ -29,8 +29,14 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="leasing_contact" v-if="leasingInfo" v-html="leasingInfo.body"></div>
+                        <!--<div class="col-md-12">-->
+                        <!--    <div class="leasing_contact" v-if="leasingInfo" v-html="leasingInfo.body"></div>-->
+                        <!--</div>-->
+                        
+           
+                        <div class="col-md-4" v-if="leasingInfo" v-for="item in leasingInfo">
+                            <p class="amenities_title">{{ item.title }}</p>
+                            <div class="amenities_body" v-html="item.body"></div>
                         </div>
                     </div>
                 </div>
@@ -80,7 +86,7 @@
                     // }
 
                     this.main = response[1].data;
-                    this.leasingInfo = response[1].data.subpages[0]
+                    this.leasingInfo = response[1].data.subpages
                     this.dataLoaded = true;
                 });
             },
