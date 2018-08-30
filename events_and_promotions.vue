@@ -141,11 +141,12 @@
                         if (today >= showOnWebDate) {
                             var start_month = moment.tz(value.start_date, this.timezone).format("MM-YYYY");
                             if (start_month <= today_month) {
-                                value.month = moment.tz(this.timezone).format("MMMM YYYY");
+                                // value.month = moment.tz(this.timezone).format("MMMM YYYY");
+                                value.month = "Ongoing";
                                 month_heading = today_month;
                             } else {
                                 value.month = moment.tz(value.start_date, this.timezone).format("MMMM YYYY");
-                                month_heading = "Ongoing";
+                                month_heading = start_month;
                             }
 
                             if (value.store != null && value.store != undefined && _.includes(value.store.image_url, 'missing')) {
