@@ -132,6 +132,14 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                                 href: "/leasing"
                             },
                             {
+                                name: "Partners",
+                                href: "/pages/greenvalley-partners"
+                            },
+                            {
+                                name: "Videos",
+                                href: "/pages/greenvalley-videos"
+                            },
+                            {
                                 name: "Newsletter Sign Up",
                                 href: "/newsletter"
                             }
