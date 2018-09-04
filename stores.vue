@@ -194,31 +194,19 @@
                     var store_list = [];
                     var vm = this;
                     _.forEach(this.processedStores, function(value, key) {
-                        // if(!_.includes(value.categories, vm.dineFilter)) {
-                            if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5b71e1b46e6f641211090000/image/png/1535468899000/gvr_default-compressor.png";
-                            }
-                            store_list.push(value);
-                        // }
+                        if (_.includes(value.image_url, 'missing')) {
+                            value.no_store_logo = true;
+                        } else {
+                            value.no_store_logo = false;
+                        }
+                        store_list.push(value);
                     });
                     this.filteredStores = store_list;
                     return store_list
                 },
                 dropDownCats() {
                     var vm = this;
-                    // var store_cats = _.filter(this.processedStores, function(o) { return !_.includes(o.categories, vm.dineFilter) });
-                    // var cats = [];
-                    // _.forEach(store_cats, function(value, key) {
-                    //     _.forEach(value.categories, function(category, key) {
-                    //         var current_category = vm.findCategoryById(category)
-                    //         if(!_.includes(cats, current_category.name)) {
-                                
-                    //             cats.push(current_category.name)
-                    //         }
-                    //     });
-                    // });
-                    // cats = cats.sort();
-                    var cats = _.filter(this.processedCategories, function(o) { return _.toNumber(o.id) !== vm.dineFilter });//!_.includes(o.categories, vm.dineFilter)
+                    var cats = _.filter(this.processedCategories, function(o) { return _.toNumber(o.id) !== vm.dineFilter });
                     cats = _.map(cats, 'name');
                     cats.unshift('All');
                     return cats;
