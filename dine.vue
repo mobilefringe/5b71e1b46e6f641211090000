@@ -172,7 +172,9 @@
                     _.forEach(this.processedStores, function(value, key) {
                         if(_.includes(value.categories, vm.dineFilter)) {
                             if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5b71e1b46e6f641211090000/image/png/1535468899000/gvr_default-compressor.png";
+                                value.no_store_logo = true;
+                            } else {
+                                value.no_store_logo = false;
                             }
                             store_list.push(value);
                         }
