@@ -71,12 +71,21 @@
             },
             created() {
                 this.loadData().then(response => {
-                    var temp_repo = this.findRepoByName('Center Information Images');
-                    if(temp_repo) {
-                        var three_imgs = _.slice(temp_repo.images, [0], [3])
+                    var temp_repo = this.findRepoByName('Center Information Banner').images;
+                    if(temp_repo != null) {
+                        this.pageBanner = temp_repo[0];
+                    } else {
+                        this.pageBanner = {
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5b71e1b46e6f641211090000/image/jpeg/1529532304000/insidebanner2.jpg"
+                        }
+                    }
+                    
+                    var temp_repo1 = this.findRepoByName('Center Information Images');
+                    if(temp_repo1) {
+                        var three_imgs = _.slice(temp_repo1.images, [0], [3])
                         this.pageImages = three_imgs;
 
-                        var one_img = temp_repo.images[3];
+                        var one_img = temp_repo1.images[3];
                         this.lowerBanner = one_img;
                     }
                     
