@@ -138,6 +138,7 @@
                     currentStore: null,
                     storeHours: null,
                     map: null,
+                    floorOne: null,
                     storeEvents: null,
                     storePromotions: null,
                     storeCoupons: null
@@ -233,8 +234,17 @@
                     'findEventById',
                     'findCouponById'
                 ]),
-                getSVGurl() {
-                    return "https://www.mallmaverick.com" + this.property.svg_map_url;
+                getSVGMap() {
+                    var svg_maps = this.findRepoByName("SVG Map").images 
+                    var floor_one = "";
+                    var floor_two = "";
+                    _.forEach(svg_maps, function(value, key) {
+                        if(value.id == 42738) {
+                            floor_one = _.split(value.image_url, '?');
+                            floor_one = floor_one[0];
+                        }
+                    });
+                    this.floorOne = floor_one;
                 },
                 svgMapRef() {
                     return this.$refs.svgmap_ref;
