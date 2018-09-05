@@ -233,11 +233,11 @@
                     'findEventById',
                     'findCouponById'
                 ]),
-                getPNGurl () {
-                    return "https://www.mallmaverick.com" + this.property.map_url;
+                getSVGurl() {
+                    return "https://www.mallmaverick.com" + this.property.svg_map_url;
                 },
-                pngMapRef() {
-                    return this.$refs.pngmapref;
+                svgMapRef() {
+                    return this.$refs.svgmap_ref;
                 },
                 allStores() {
                     this.processedStores.map(function(store){
