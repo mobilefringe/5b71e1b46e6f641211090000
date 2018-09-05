@@ -165,6 +165,7 @@
                     this.updateCurrentStore(this.$route.params.id);
                 },
                 currentStore: function () {
+                    this.currentStore.zoom = 2;
                     if (_.includes(this.currentStore.store_front_url_abs, 'missing')) {
                         this.currentStore.store_front_url_abs = "//codecloud.cdn.speedyrails.net/sites/5b71e1b46e6f641211090000/image/png/1535468899000/gvr_default-compressor.png"
                     }
