@@ -271,31 +271,11 @@
                             floor_1.show = true;
                             
                             floor_list.push(floor_1);
-                        // } else if (this.currentStore.z_coordinate == 2) {
-                        //     var floor_2 = {};
-                        //     floor_2.id = "second-floor";
-                        //     floor_2.title = "Level 2";
-                        //     floor_2.map = _.find(floor_maps, function(o){ return _.toNumber(o.id) == _.toNumber(41085);}).image_url;
-                        //     floor_2.z_index = 2;
-                        //     floor_2.show = true;
-                            
-                        //     floor_list.push(floor_2);
                         }
                     }
                     
                     return floor_list;
                 }
-                // floorList () {
-                //     var floor_list = [];
-                //     var floor_1 = {};
-                //     floor_1.id = "first-floor";
-                //     floor_1.title = "Level One";
-                //     floor_1.map = this.getPNGurl;
-                //     floor_1.z_index = 1;
-                //     floor_1.show = true;
-                //     floor_list.push(floor_1);
-                //     return floor_list;
-                // }
             },
             methods: {
                 loadData: async function () {
