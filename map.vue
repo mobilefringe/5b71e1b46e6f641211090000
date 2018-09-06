@@ -149,6 +149,10 @@
                     all_stores.push(initZoom)
                     return all_stores
                 },
+                // getSVGMap () {
+                //     var mapURL = "https://www.mallmaverick.com" + this.property.svgmap_url.split("?")[0];
+                //     return mapURL
+                // },
                 getSVGMap() {
                     var svg_maps = this.findRepoByName("SVG Map").images 
                     var floor_one = "";
@@ -167,6 +171,7 @@
                     var floor_1 = {};
                     floor_1.id = "first-floor";
                     floor_1.title = "Level One";
+                    // floor_1.map = this.getSVGMap
                     floor_1.map = this.floorOne;
                     floor_1.z_index = 1;
                     floor_1.show = true;
