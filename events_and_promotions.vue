@@ -121,6 +121,13 @@
                             "image_url": "//codecloud.cdn.speedyrails.net/sites/5b71e1b46e6f641211090000/image/jpeg/1529532304000/insidebanner2.jpg"
                         }
                     }
+                    
+                    if (_.isEmpty(this.eventList)) {
+                        this.toggleEvents = false;
+                        this.togglePromos = true;
+                        this.handleButton();
+                    }
+                    
                     this.dataLoaded = true;
                 });
             },
