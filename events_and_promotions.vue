@@ -159,11 +159,11 @@
                             }
 
                             if (value.store != null && value.store != undefined && _.includes(value.store.image_url, 'missing')) {
-                                value.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1529532187000/eventsplaceholder2@2x.png";
+                                value.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5b71e1b46e6f641211090000/image/png/1542644938364/gvr_events.png";
                             }
                             
                             if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1529532187000/eventsplaceholder2@2x.png";
+                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5b71e1b46e6f641211090000/image/png/1542644938364/gvr_events.png";
                             }
                             
                             value.description_short = _.truncate(value.description, { 'length': 250, 'separator': ' ' });
