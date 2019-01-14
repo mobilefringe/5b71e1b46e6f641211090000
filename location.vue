@@ -22,6 +22,7 @@
                 </div>
                 <div class="location_map main_container">
                     <!--<google-map :property="property" :zoom="16"></google-map>-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3226.912175898843!2d-115.08710898473183!3d36.02243798011614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8d1dd064bed7d%3A0x140ac265f5cc2f11!2s2225+Village+Walk+Dr%2C+Henderson%2C+NV+89052%2C+USA!5e0!3m2!1sen!2sca!4v1466617985201" height="490" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
                 <div class="main_container">
                     <div class="row">
