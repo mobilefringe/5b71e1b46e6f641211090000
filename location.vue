@@ -20,8 +20,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="location_map">
-                    <google-map :property="property" :zoom="16"></google-map>
+                <div class="location_map main_container">
+                    <!--<google-map :property="property" :zoom="16"></google-map>-->
                 </div>
                 <div class="main_container">
                     <div class="row">
