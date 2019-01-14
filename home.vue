@@ -184,6 +184,10 @@
                 ]),
                 homeBanners() {
                     var banners = [];
+                    var temp_banner = [{
+                        name: "";
+                        url : "//codecloud.cdn.speedyrails.net/sites/5b71e1b46e6f641211090000/image/jpeg/1547492645045/dgvr_home_1925x470.jpg"
+                    }]
                     _.forEach(this.$store.state.banners, function (value, key) {
                         var today = new Date();
                         var start = new Date (value.start_date);
