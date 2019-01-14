@@ -1090,7 +1090,7 @@ $anim-speed: 0.3s;
 }
 /* *** LOCATION *** */
 .location_map {
-    margin: 60px 0;
+    margin: 60px auto;
     height: 490px;
 }
 .location_image_container {
