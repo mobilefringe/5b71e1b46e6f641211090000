@@ -17,7 +17,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <!--<div v-if="main" v-html="main.body"></div>-->
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam laoreet tempus accumsan. Donec tincidunt augue ligula, et pulvinar urna maximus sit amet. Vivamus vitae dictum nibh. Pellentesque pharetra ex orci, ut ornare neque sollicitudin sed. Integer eu elit sem. </p>
+                           
                         </div>
                     </div>
                 </div>
