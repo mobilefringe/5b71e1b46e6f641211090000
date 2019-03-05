@@ -15,9 +15,14 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
-                            <!--<div v-if="main" v-html="main.body"></div>-->
-                           
+                         <div class="col-md-12">
+                            <h3 class="center inside_page_title">Amenities</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6" v-if="amenities" v-for="item in amenities">
+                            <p class="amenities_title">{{ item.title }}</p>
+                            <div class="amenities_body" v-html="item.body"></div>
                         </div>
                     </div>
                 </div>
