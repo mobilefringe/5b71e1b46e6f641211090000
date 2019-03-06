@@ -31,7 +31,7 @@
                         <img :src="item.image_url" alt="" />   
                     </div>
                 </div>
-                <div class="main_container">
+                <!--<div class="main_container">-->
                     <!--<div class="row">-->
                         
                     <!--</div>-->
@@ -47,7 +47,7 @@
                 <!--        <h1 v-if="lowerBanner.name">{{ lowerBanner.name }}</h1>-->
                 <!--    </div>-->
                 <!--</div>-->
-            </div>
+            <!--</div>-->
         </transition>
     </div>
 </template>
