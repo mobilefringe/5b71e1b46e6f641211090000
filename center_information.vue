@@ -32,9 +32,9 @@
                     </div>
                 </div>
                 <div class="main_container">
-                    <div class="row">
+                    <!--<div class="row">-->
                         
-                    </div>
+                    <!--</div>-->
                     <!--<div class="row">-->
                     <!--    <div class="col-md-12" v-if="amenities" v-for="item in amenities">-->
                     <!--        <div class="amenities_body" v-html="item.body"></div>-->
