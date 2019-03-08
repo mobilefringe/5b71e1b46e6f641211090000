@@ -164,6 +164,7 @@
                             if(value.id == 42738) {
                                 floor_one = _.split(value.image_url, '?');
                                 floor_one = floor_one[0];
+                                console.log("floor_one", floor_one)
                             }
                         });
                         this.floorOne = floor_one;
