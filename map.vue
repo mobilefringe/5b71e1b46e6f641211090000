@@ -141,6 +141,7 @@
                         value.zoom = 2;
                         if(!value.svgmap_region){
                             value.svgmap_region = value.id;
+                            console.log("no svg value", value.name)
                         }
                     });
                     var initZoom = {};
