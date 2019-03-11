@@ -141,7 +141,7 @@
                         value.zoom = 2;
                         if(!value.svgmap_region){
                             value.svgmap_region = value.id;
-                            console.log("value", value.name)
+                            console.log("no svg value", value.name)
                         }
                         else {
                             console.log("value", value.name, value.svgmap_region)
