@@ -144,7 +144,7 @@
                             console.log("value", value.name)
                         }
                         else {
-                            console.log("value", value.svgmap_region)
+                            console.log("value", value.name, value.svgmap_region)
                         }
                     });
                     var initZoom = {};
