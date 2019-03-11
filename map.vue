@@ -143,6 +143,9 @@
                             value.svgmap_region = value.id;
                             console.log("value", value.name)
                         }
+                        else {
+                            console.log("value", value.svgmap_region)
+                        }
                     });
                     var initZoom = {};
                     initZoom.svgmap_region = "init";
