@@ -203,7 +203,7 @@
                     this.$nextTick(function() {
                         this.storeSearch = ""
                     });
-                    this.svgMapRef.dropPin(option);
+                    this.dropPin(option);
                 },
                 dropPin(store) {
                     this.$refs.mapplic_ref.showLocation(store.svgmap_region);
