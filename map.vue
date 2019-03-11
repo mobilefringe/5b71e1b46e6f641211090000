@@ -141,6 +141,7 @@
                         value.zoom = 2;
                         if(!all_stores.svgmap_region){
                             all_stores.svgmap_region = all_stores.id;
+                            console.log("all_stores", all_stores.name)
                         }
                     });
                     var initZoom = {};
