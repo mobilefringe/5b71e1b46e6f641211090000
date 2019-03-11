@@ -139,9 +139,9 @@
                     var all_stores = this.processedStores;
                     _.forEach(all_stores, function(value, key) {
                         value.zoom = 2;
-                        if(!all_stores.svgmap_region){
-                            all_stores.svgmap_region = all_stores.id;
-                            console.log("all_stores", all_stores.name)
+                        if(!value.svgmap_region){
+                            value.svgmap_region = value.id;
+                            console.log("value", value.name)
                         }
                     });
                     var initZoom = {};
