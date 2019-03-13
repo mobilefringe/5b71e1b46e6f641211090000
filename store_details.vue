@@ -248,16 +248,19 @@
                     'findCouponById'
                 ]),
                 getSVGMap() {
-                    var svg_maps = this.findRepoByName("SVG Map").images 
-                    var floor_one = "";
-                    var floor_two = "";
-                    _.forEach(svg_maps, function(value, key) {
-                        if(value.id == 42738) {
-                            floor_one = _.split(value.image_url, '?');
-                            floor_one = floor_one[0];
-                        }
-                    });
-                    this.floorOne = floor_one;
+                    var svg_maps = this.findRepoByName("SVG Map") 
+                    if(svg_maps && svg_maps.images){
+                        svg_maps = svg_maps.images;
+                        var floor_one = "";
+                        var floor_two = "";
+                        _.forEach(svg_maps, function(value, key) {
+                            if(value.id == 42738) {
+                                floor_one = _.split(value.image_url, '?');
+                                floor_one = floor_one[0];
+                            }
+                        });
+                        this.floorOne = floor_one;
+                    }
                 },
                 svgMapRef() {
                     return this.$refs.svgmap_ref;
