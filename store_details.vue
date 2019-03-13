@@ -282,7 +282,7 @@
                             var floor_1 = {};
                             floor_1.id = "first-floor";
                             floor_1.title = "Level 1";
-                            floor_1.map = this.floorOne;
+                            floor_1.map = _.find(floor_maps, function(o){ return _.toNumber(o.id) == _.toNumber(42738);}).image_url;
                             floor_1.z_index = 1;
                             floor_1.show = true;
                             
