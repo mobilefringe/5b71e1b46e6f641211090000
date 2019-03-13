@@ -278,7 +278,7 @@
                     
                     if(floor_maps_repo  && floor_maps_repo.images){
                         floor_maps = floor_maps_repo.images;
-                        if (this.currentStore.z_coordinate == 1) {
+                        // if (this.currentStore.z_coordinate == 1) {
                             var floor_1 = {};
                             floor_1.id = "first-floor";
                             floor_1.title = "Level 1";
@@ -287,7 +287,7 @@
                             floor_1.show = true;
                             
                             floor_list.push(floor_1);
-                        }
+                        // }
                     }
                     
                     return floor_list;
