@@ -1760,7 +1760,7 @@ $anim-speed: 0.3s;
     text-transform: uppercase;
 }
 .store_details_btn {
-    min-width: 160px;
+    min-width: 200px;
 }
 @media(max-width: 1300px){
     .location_image_container {
