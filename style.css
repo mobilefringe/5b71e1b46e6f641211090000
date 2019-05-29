@@ -410,8 +410,14 @@ a {
         p {
             margin: 0 0 5px;
         }
+        .social_icon_container {
+            margin: 10px 0;
+        }
         .social_icon {
             padding: 0 5px;
+            .fab {
+                font-size: 2rem;
+            }
         }
         .footer_links a {
             color: #FFF;
