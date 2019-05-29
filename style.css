@@ -419,10 +419,15 @@ a {
                 font-size: 2rem;
             }
         }
-        .footer_links a {
-            color: #FFF;
-            &:hover {
-                text-decoration: underline;
+        .footer_links {
+            p {
+                margin: 0;
+            }
+            a {
+                color: #FFF;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }
