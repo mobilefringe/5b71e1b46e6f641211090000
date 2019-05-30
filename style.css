@@ -1081,8 +1081,8 @@ $anim-speed: 0.3s;
     margin-bottom: 12px;
 }
 .event_desc {
-    font-size: 0.8rem;
-    line-height: 1.5rem;
+    // font-size: 0.8rem;
+    // line-height: 1.5rem;
     color: #000;
     img {
         max-width: 100%;
@@ -1185,54 +1185,9 @@ $anim-speed: 0.3s;
 /* *** MAP *** */
 .map_search {
     margin-bottom: 10px;
-    // width: 170px;
     height: 35px;
     position: relative;
     background: #ebebeb;
-    // #searchComponentInput {
-    //     padding: 0 13px;
-    //     height: 28px;
-    //     border: none;
-    //     background: transparent;
-    //     font-size: 0.8125rem;
-    //     line-height: normal;
-    //     color: #555;
-    // }
-    // .fa-angle-down {
-    //     display: none;
-    // }
-    // .fa-search {
-    //     position: absolute;
-    //     top: 8px;
-    //     right: 10px;
-    //     font-size: 0.875rem;
-    //     line-height: normal;
-    //     color: #555;
-    // }
-    // .options-list {
-    //     top: 42px;
-    //     z-index: 9;
-    //     border: 0;
-    //     border-radius: 0;
-    //     border-top: 1px solid #555;
-    //     box-shadow: 0 3px 6px 0 rgba(0,0,0,0.15);
-    //     li {
-    //         padding: 8px 10px;
-    //         border: 0;
-    //         background: #ebebeb;
-    //         color: #555;
-    //         p {
-    //             margin: 0;
-    //             font-size: 0.8125rem;
-    //             line-height: normal;
-    //             transition: all 0.3s ease;
-    //         }
-    //     }
-    //     li.highlighted {
-    //         background: $primary;
-    //         color: #FFF;
-    //     }
-    // }
     .control {
         border: 1px solid #ebebeb;
     }
@@ -1274,7 +1229,6 @@ $anim-speed: 0.3s;
             color: #555;
             p {
                 margin: 0;
-                // font-size: 0.8125rem;
                 line-height: normal;
                 transition: all 0.3s ease;
             }
@@ -1290,65 +1244,6 @@ $anim-speed: 0.3s;
     height: 35px;
     position: relative;
     background: #ebebeb;
-    // .v-select {
-    //     .dropdown-toggle {
-    //         border: none; 
-    //         .form-control {
-    //             height: 30px;
-    //             font-family: 'Montserrat', sans-serif;
-    //             font-weight: 300;
-    //             font-size: 0.8125rem !important;
-    //             line-height: normal !important;
-    //             color: #555; 
-    //         }
-    //         .open-indicator {
-    //             bottom: 3px;
-    //             &:before {
-    //                 border-color: #555;
-    //                 border-style: solid;
-    //                 border-width: 2px 2px 0 0;
-    //             }
-    //         }
-    //     }
-    //     .dropdown-menu {
-    //         padding: 0;
-    //         top: 30px;
-    //         border-radius: 0 !important;
-    //         border: none;
-    //         border-top: 1px solid #555;
-    //         background: #ebebeb;
-    //         font-family: 'Montserrat', sans-serif;
-    //         font-weight: 300;
-    //         font-size: 0.8125rem !important;
-    //         line-height: normal !important;
-    //         color: #555; 
-    //     }
-    //     .dropdown-menu > .highlight > a {      
-    //         background: $primary;
-    //     }
-    //     .selected-tag {
-    //         margin: 0;
-    //         padding: 8px 10px;
-    //         width: 160px;
-    //         height: 30px;
-    //         white-space: nowrap;
-    //         overflow: hidden;
-    //         text-overflow: ellipsis;
-    //         position: absolute;
-    //         left: 0;
-    //         border: none;
-    //         border-radius: 0;
-    //         font-family: 'Montserrat', sans-serif;
-    //         font-weight: 300;
-    //         font-size: 0.8125rem;
-    //         line-height: normal;
-    //         color: #555; 
-    //     }  
-    //     li > a {
-    //         padding: 8px 10px;
-    //         line-height: normal;
-    //     }
-    // }
     .v-select {
         .dropdown-toggle {
             border: none; 
@@ -1356,7 +1251,6 @@ $anim-speed: 0.3s;
                 height: 35px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 300;
-                // font-size: 0.8125rem !important;
                 line-height: normal !important;
                 color: #555; 
             }
@@ -1399,7 +1293,6 @@ $anim-speed: 0.3s;
             border-radius: 0;
             font-family: 'Montserrat', sans-serif;
             font-weight: 300;
-            // font-size: 0.8125rem;
             line-height: normal;
             color: #555; 
         }  
