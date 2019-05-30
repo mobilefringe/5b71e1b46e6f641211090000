@@ -1304,15 +1304,16 @@ $anim-speed: 0.3s;
     margin-top: 0;
 }
 .store_list_container {
-    max-width: 170px;
+    // max-width: 170px;
     max-height: 542px;
     overflow-y: scroll;
     .store_name {
         margin: 7px 0;
+        padding-left: 5px;
         transition: all 0.3s ease;
         &:hover {
             cursor: pointer;
-            background-color: $primary;
+            background-color: rgba(59, 129, 120, .7);
             // text-decoration: underline;
         }
     }
