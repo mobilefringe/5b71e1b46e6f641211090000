@@ -1481,7 +1481,7 @@ $anim-speed: 0.3s;
         }
         .dropdown-menu {
             padding: 0;
-            top: 33px;
+            top: 35px;
             border-radius: 0 !important;
             border: none;
             border-top: 1px solid #555;
