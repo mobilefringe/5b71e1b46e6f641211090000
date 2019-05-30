@@ -313,6 +313,9 @@ a {
             	&:hover, &:active, &:focus, &:visited {
             	    background: $secondary;
             	}
+            	p {
+            	    margin: 0;
+            	}
             	a:hover {
                     color: #FFF;
                 }
