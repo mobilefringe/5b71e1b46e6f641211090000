@@ -290,7 +290,7 @@ a {
             display: inline-block;
         	position: relative;
         	font-size: 0.875rem;
-        	line-height: 0.8125rem;
+        	line-height: 1.625rem;
             text-align: left;
             text-transform: uppercase;
             span:hover {
