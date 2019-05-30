@@ -171,8 +171,8 @@
                             showEvents.push(value);
                         }
                     });
-                    showEvents = _.orderBy(showEvents, function (o) { return o.end_date }).reverse();
-                    showEvents = _.groupBy(showEvents, event => (event.month));
+                    showEvents = _.orderBy(showEvents, function (o) { return o.end_date });
+                    showEvents = _.groupBy(showEvents, event => (event.month)).reverse();
                     return showEvents
                 },
                 promoList: function promos() {
