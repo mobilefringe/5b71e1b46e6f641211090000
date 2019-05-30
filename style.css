@@ -1070,7 +1070,7 @@ $anim-speed: 0.3s;
     }
 }
 .event_dates, .event_details_dates {
-    // margin-bottom: 24px;
+    margin-bottom: 24px;
     font-size: 0.875rem;
     line-height: normal;
     span {
@@ -1081,6 +1081,8 @@ $anim-speed: 0.3s;
     margin-bottom: 12px;
 }
 .event_desc {
+    // font-size: 0.8rem;
+    // line-height: 1.5rem;
     color: #000;
     img {
         max-width: 100%;
@@ -1090,7 +1092,7 @@ $anim-speed: 0.3s;
     margin-bottom: 60px;
 }
 .event_link {
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 8px 2%;
     min-width: 200px;
     display: inline-block;
