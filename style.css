@@ -1287,7 +1287,6 @@ $anim-speed: 0.3s;
 }
 .map_category {
     margin-bottom: 10px;
-    // width: 170px;
     height: 35px;
     position: relative;
     background: #ebebeb;
@@ -1390,7 +1389,7 @@ $anim-speed: 0.3s;
             margin: 0;
             padding: 8px 10px;
             height: 34px;
-            width: 178px;
+            width: 100%;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
