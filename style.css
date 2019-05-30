@@ -1402,6 +1402,9 @@ $anim-speed: 0.3s;
     .control {
         border: 1px solid #ebebeb;
     }
+    input#search_box {
+        border: none;
+    }
     #searchComponentInput {
         padding: 0 13px;
         height: 28px;
