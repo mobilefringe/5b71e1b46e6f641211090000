@@ -251,6 +251,15 @@ a {
 /* *** HEADER *** */
 #header {
     box-shadow: 1px 1px 7px rgba(12, 12, 12, 0.3);
+    .social_icon_container {
+        margin: 10px 0;
+    }
+    .social_icon {
+        padding: 0 5px;
+        .fab {
+            font-size: 2rem;
+        }
+    }
     .site_logo {
         padding: 28px 0;
         max-width: 300px;
