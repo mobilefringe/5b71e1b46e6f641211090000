@@ -260,6 +260,7 @@ a {
             .fab {
                 font-size: 1.5rem;
                 color: #555;
+                transition: all 0.3s ease;
                 &:hover {
                     color: $primary;
                 }
