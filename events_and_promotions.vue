@@ -172,7 +172,7 @@
                         }
                     });
                     showEvents = _.orderBy(showEvents, function (o) { return o.end_date });
-                    showEvents = _.groupBy(showEvents, event => (event.month)).reverse();
+                    showEvents = _.groupBy(showEvents, event => (event.month));
                     return showEvents
                 },
                 promoList: function promos() {
