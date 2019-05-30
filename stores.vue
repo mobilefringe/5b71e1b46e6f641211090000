@@ -206,11 +206,9 @@
                 },
                 dropDownCats() {
                     var vm = this;
-                    console.log("this.processedCategories", this.processedCategories)
                     var categories = this.processedCategories;
                     var cats = _.filter(categories, function(o) { return _.toNumber(o.id) !== vm.dineFilter });
-                    var cats = _.filter(cats, function(o) { return o.store_ids != null });
-                    console.log("cats", cats)
+                    cats = _.filter(cats, function(o) { return o.store_ids != null });
                     cats = _.map(cats, 'name');
                     cats.unshift('All');
                     return cats;
