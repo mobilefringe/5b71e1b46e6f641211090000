@@ -1185,8 +1185,8 @@ $anim-speed: 0.3s;
 /* *** MAP *** */
 .map_search {
     margin-bottom: 10px;
-    width: 170px;
-    height: 30px;
+    // width: 170px;
+    height: 35px;
     position: relative;
     background: #ebebeb;
     // #searchComponentInput {
@@ -1246,7 +1246,6 @@ $anim-speed: 0.3s;
         height: 33px;
         border: none;
         background: transparent;
-        // font-size: 0.8125rem;
         line-height: normal;
         color: #555;
     }
@@ -1257,7 +1256,6 @@ $anim-speed: 0.3s;
         position: absolute;
         top: 8px;
         right: 10px;
-        // font-size: 0.875rem;
         line-height: normal;
         color: #555;
     }
