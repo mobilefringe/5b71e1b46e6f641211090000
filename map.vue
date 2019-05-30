@@ -107,7 +107,13 @@
                     return cats;
                 },
                 dropDownCats() {
-                    var cats = _.filter(this.processedCategories, function(o) { return o.name != "Dine Filter"; });
+                    // var cats = _.filter(this.processedCategories, function(o) { return o.name != "Dine Filter"; });
+                    // cats = _.map(cats, 'name');
+                    // cats.unshift('All');
+                    // return cats;
+                    
+                    var categories = this.processedCategories;
+                    var cats = _.filter(cats, function(o) { return o.store_ids != null });
                     cats = _.map(cats, 'name');
                     cats.unshift('All');
                     return cats;
