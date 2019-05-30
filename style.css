@@ -1455,7 +1455,7 @@ $anim-speed: 0.3s;
 .store_category {
     margin-right: 30px;
     width: 208px;
-    height: 30px;
+    height: 35px;
     position: relative;
     float: right;
     background: #ebebeb;
@@ -1463,10 +1463,10 @@ $anim-speed: 0.3s;
         .dropdown-toggle {
             border: none; 
             .form-control {
-                height: 30px;
+                height: 35px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 300;
-                font-size: 0.8125rem !important;
+                // font-size: 0.8125rem !important;
                 line-height: normal !important;
                 color: #555; 
             }
@@ -1488,7 +1488,7 @@ $anim-speed: 0.3s;
             background: #ebebeb;
             font-family: 'Montserrat', sans-serif;
             font-weight: 300;
-            font-size: 0.8125rem !important;
+            font-size: 1rem !important;
             line-height: normal !important;
             color: #555; 
         }
@@ -1505,7 +1505,7 @@ $anim-speed: 0.3s;
             border-radius: 0;
             font-family: 'Montserrat', sans-serif;
             font-weight: 300;
-            font-size: 0.8125rem;
+            // font-size: 0.8125rem;
             line-height: normal;
             color: #555; 
         }  
