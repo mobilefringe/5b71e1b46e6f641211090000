@@ -99,20 +99,12 @@
                     "storesByCategoryName",
                     'findCategoryByName'
                 ]),
-                // allStores() {
-                //     this.processedStores.map(function(store){
-                //         store.zoom = 1;
-                //     })
-                //     return this.processedStores;
-                // },
                 allCatergories() {
                     var categories = this.processedCategories;
                     var cats = _.filter(cats, function(o) { return o.store_ids != null });
                     cats = _.map(cats, 'name');
                     cats.unshift('All');
                     return cats;
-                    
-                    // return this.processedCategories;
                 },
                 dropDownCats() {
                     var cats = _.filter(this.processedCategories, function(o) { return o.name != "Dine Filter"; });
