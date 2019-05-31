@@ -2347,7 +2347,11 @@ $anim-speed: 0.3s;
         width: 50%;
     }
 }
-
+@media(max-width: 325px){
+    #header .site_logo {
+        max-width: 200px;
+    }
+}
 /***** custom transition classes ****/
 .dropdown-fade-enter-active, .dropdown-fade-leave-active {
   transition: opacity .2s ease;
