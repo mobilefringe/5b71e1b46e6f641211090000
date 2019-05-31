@@ -1948,9 +1948,9 @@ $anim-speed: 0.3s;
             padding: 0;
         }
         .mobile_social_icon_container {
-            // position: absolute;
-            // top: 10px;
-            // right: 0;
+            margin: 0 auto;
+            max-width: 100px;
+            text-align: center;
             .social_icon {
                 padding: 0 5px;
                 .fab {
