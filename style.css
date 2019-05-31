@@ -1838,6 +1838,9 @@ $anim-speed: 0.3s;
         padding-right: 15px;
     }
     /* *** HEADER *** */
+    #header .social_icon_container {
+        display: none;
+    }
     #header .site_logo {
         padding: 7px 0 28px 0;
         max-width: 230px;
