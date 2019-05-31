@@ -1954,12 +1954,9 @@ $anim-speed: 0.3s;
             .social_icon {
                 padding: 0 5px;
                 .fab {
-                    font-size: 1.5rem;
-                    color: #555;
+                    font-size: 2rem;
+                    color: #FFF;
                     transition: all 0.3s ease;
-                    &:hover {
-                        color: $primary;
-                    }
                 }
             }
         }
