@@ -1936,7 +1936,7 @@ $anim-speed: 0.3s;
     }
     #mobile_nav {
         width: 100vw;
-        height: calc(100vh - 100px);
+        height: calc(100vh - 102px);
         position: absolute;
         top: 1px;
         left: 0;
