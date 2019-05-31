@@ -75,6 +75,7 @@
         							    </li>
         					        </ul>
         					        <div class="mobile_social_icon_container">
+        					            <p>Follow Us on Social Media</p>
                 					    <span class="social_icon" v-for="item in social_media">
                                             <a :href="item.url" target="_blank">
                                                 <p class="accessibility">{{item.name}}</p>
