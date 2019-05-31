@@ -1947,6 +1947,22 @@ $anim-speed: 0.3s;
             margin: 20px 0 0 0;
             padding: 0;
         }
+        .mobile_social_icon_container {
+            // position: absolute;
+            // top: 10px;
+            // right: 0;
+            .social_icon {
+                padding: 0 5px;
+                .fab {
+                    font-size: 1.5rem;
+                    color: #555;
+                    transition: all 0.3s ease;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
     }
     #mobile_nav ul .menu_item {
         // padding: 12px 0;
