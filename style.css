@@ -2354,6 +2354,9 @@ $anim-speed: 0.3s;
     #header .site_logo {
         max-width: 200px;
     }
+    #mobile_nav {
+        height: calc(100vh - 85px);
+    }
 }
 /***** custom transition classes ****/
 .dropdown-fade-enter-active, .dropdown-fade-leave-active {
