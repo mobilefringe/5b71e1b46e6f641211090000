@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto+Condensed:400,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
@@ -1093,7 +1094,7 @@ $anim-speed: 0.3s;
     font-size: 0.875rem;
     line-height: normal;
     span {
-        color: $secondary;
+        color: $primary;
     }
 }
 .event_details_dates {
