@@ -458,6 +458,12 @@ a {
             margin: 0;
         }
     }
+    .footer_text {
+        a:hover {
+            color: #FFF;
+            text-decoration: underline;
+        }
+    }
 }
 
 /* *** HOME *** */
