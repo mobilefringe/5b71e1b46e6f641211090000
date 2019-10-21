@@ -207,7 +207,7 @@
                 dropDownCats() {
                     var vm = this;
                     var categories = this.processedCategories;
-                    var cats = _.filter(categories, function(o) { return _.toNumber(o.id) !== vm.dineFilter });
+                    var cats = _.filter(categories, function(o) { return _.toNumber(o.id) !== vm.dineFilter  && o.store_ids != null});
                     cats = _.filter(cats, function(o) { return o.store_ids != null });
                     cats = _.map(cats, 'name');
                     cats.unshift('All');
