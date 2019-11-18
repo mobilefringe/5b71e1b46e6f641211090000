@@ -327,6 +327,29 @@
                         this.$router.replace({ name: 'stores' });
                     }
                     this.$breadcrumbs[1].meta.breadcrumb = this.currentStore.name
+                    
+                    // DELIVERY
+                    var delivery_category = 8272;
+                    var categories = this.currentStore.categories;
+                    var subcategories = this.currentStore.subcategories;
+                    if (_.includes(categories, delivery_category) && !_.isEmpty(subcategories)) {
+                        this.deliveryAvailable = true;
+                        if (_.includes(subcategories, 8278)) {
+                            this.hasUberEats = true;
+                        }
+                        if (_.includes(subcategories, 8274)) {
+                            this.hasDoordash = true;
+                        }
+                        if (_.includes(subcategories, 8275)) {
+                            this.hasGrubhub = true;
+                        }
+                        if (_.includes(subcategories, 8276)) {
+                            this.hasPostmates = true;   
+                        }
+                        if (_.includes(subcategories, 8277)) {
+                            this.hasRestaurantDelivery = true;   
+                        }
+                    }
                 },
                 updateSVGMap(map) {
                     this.map = map;
