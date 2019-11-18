@@ -329,7 +329,7 @@
                     this.$breadcrumbs[1].meta.breadcrumb = this.currentStore.name
                     
                     // DELIVERY
-                    var delivery_category = 8272;
+                    var delivery_category = 8273;
                     var categories = this.currentStore.categories;
                     var subcategories = this.currentStore.subcategories;
                     if (_.includes(categories, delivery_category) && !_.isEmpty(subcategories)) {
