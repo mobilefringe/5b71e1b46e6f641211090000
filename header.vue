@@ -65,7 +65,8 @@
                                                     <b-collapse :id="$t(item.name)" accordion="my-accordion" class="accordion_body">
                                                         <b-card-body v-for="sub_menu in item.sub_menu">
                                                             <p class="card-text">
-                                                                <router-link :to="sub_menu.href">{{$t(sub_menu.name)}}</router-link>
+                                                                <a v-if="sub_menu.target" :href="sub_menu.href" target="_blank">{{ sub_menu.name }}</a>
+                                                                <router-link v-else :to="sub_menu.href">{{$t(sub_menu.name)}}</router-link>
                                                             </p>
                                                         </b-card-body>
                                                     </b-collapse>
