@@ -37,7 +37,7 @@
     						                <a v-if="sub_menu.target" :href="sub_menu.href" target="_blank">
     						                    <p>{{ sub_menu.name }}</p>
     						                </a>
-    						                <router-link :to="sub_menu.href">
+    						                <router-link v-else :to="sub_menu.href">
 						                        <p>{{ sub_menu.name }}</p>
 					                        </router-link>
     						            </li>
