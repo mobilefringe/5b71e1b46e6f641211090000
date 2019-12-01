@@ -14,7 +14,7 @@
                                         <span v-if="banner.heading" class="banner_heading">{{ banner.heading }}</span>
                                         <h1 class="banner_title">{{ banner.name }}</h1>
                                         <p class="banner_text">{{ banner.description }}</p>
-                                        <a :href="banner.url">
+                                        <a :href="banner.url" :aria-label="banner.name">
                                             <span class="banner_btn animated_btn">Find Out More</span>
                                         </a>
                                     </div>
@@ -24,7 +24,7 @@
                                 <div class="banner_image" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>
                             </div>
                             <div v-else>
-                                <a :href="banner.url">
+                                <a :href="banner.url" :aria-label="banner.name">
                                     <div class="banner_image" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>
                                 </a>
                             </div>
@@ -45,7 +45,8 @@
             					            <h3>{{ item.name }}</h3>
         					            </span>
                 					    <span class="info">
-            					            <p><span v-if="isMultiDay(item)">{{ item.start_date | moment("MMMM D", timezone)}} to {{ item.end_date | moment("MMMM D", timezone)}}</span><span v-else>{{ item.start_date | moment("MMMM D", timezone)}}</span></p>
+            					            <p v-if="isMultiDay(item)">{{ item.start_date | moment("MMMM D", timezone)}} to {{ item.end_date | moment("MMMM D", timezone)}}</p>
+            					            <p v-else>{{ item.start_date | moment("MMMM D", timezone)}}</p>
             					            <p>View Event Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
         					            </span>
                     				</div>
@@ -59,7 +60,8 @@
             					            <h3>{{ item.name }}</h3>
         					            </span>
                 					    <span class="info">
-            					            <p><span v-if="isMultiDay(item)">{{ item.start_date | moment("MMMM D", timezone)}} to {{ item.end_date | moment("MMMM D", timezone)}}</span><span v-else>{{ item.start_date | moment("MMMM D", timezone)}}</span></p>
+            					            <p v-if="isMultiDay(item)">{{ item.start_date | moment("MMMM D", timezone)}} to {{ item.end_date | moment("MMMM D", timezone)}}</p>
+            					            <p v-else>{{ item.start_date | moment("MMMM D", timezone)}}</p>
             					            <p>View Promotion Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
         					            </span>
                     				</div>
