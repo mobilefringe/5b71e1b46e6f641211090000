@@ -21,7 +21,7 @@
                                 <p v-else class="event_store_name">{{ currentPromo.store.name }}</p>
                                 <h2 class="event_name">{{ currentPromo.name }}</h2>
                                 <p class="event_dates" v-if="isMultiDay(currentPromo)">{{ currentPromo.start_date | moment("MMMM D", timezone)}} - {{ currentPromo.end_date | moment("MMMM D", timezone)}}</p>
-                                <p v-else>{{ currentPromo.start_date | moment("MMMM D", timezone)}}</p>
+                                <p class="event_dates" v-else>{{ currentPromo.start_date | moment("MMMM D", timezone)}}</p>
                                 <div class="event_desc event_details" v-html="currentPromo.rich_description"></div>
                             </div>
                             <div class="col-md-4">
