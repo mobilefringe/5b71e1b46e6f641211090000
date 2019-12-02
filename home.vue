@@ -108,7 +108,7 @@
     </div>
 </template>
 <script>
-    define(["Vue", "vuex", "vue-mata", "vue!vue-slick", "moment", "moment-timezone", "vue-moment", "vue!welcome_msg"], function (Vue, Vuex, Meta, slick, moment, tz, VueMoment, welcomeMessage) {
+    define(["Vue", "vuex", "vue!vue-slick", "moment", "moment-timezone", "vue-moment", "vue!welcome_msg"], function (Vue, Vuex, slick, moment, tz, VueMoment, welcomeMessage) {
         return Vue.component("home-component", {
             template: template, // the variable template will be injected
             data: function() {
@@ -300,18 +300,18 @@
                     }
                 }
             },
-            // metaInfo () {
-            //     return {
-            //         title: this.meta.meta_title,
-            //         meta: [
-            //             { name: 'description', vmid: 'description', content: this.meta.meta_description },
-            //             { name: 'keywords',  vmid: 'keywords', content: this.meta.meta_keywords },
-            //             { property: 'og:title', vmid: 'og:title', content: this.meta.meta_title },
-            //             { property: 'og:description', vmid: 'og:description', content: this.meta.meta_description },
-            //             { property: 'og:image', vmid: 'og:image', content: this.meta.meta_image }
-            //         ]
-            //     }
-            // }
+            metaInfo () {
+                return {
+                    title: this.meta.meta_title,
+                    meta: [
+                        { name: 'description', vmid: 'description', content: this.meta.meta_description },
+                        { name: 'keywords',  vmid: 'keywords', content: this.meta.meta_keywords },
+                        { property: 'og:title', vmid: 'og:title', content: this.meta.meta_title },
+                        { property: 'og:description', vmid: 'og:description', content: this.meta.meta_description },
+                        { property: 'og:image', vmid: 'og:image', content: this.meta.meta_image }
+                    ]
+                }
+            }
         })
     })
 </script>
