@@ -5,7 +5,7 @@
             <div v-if="dataLoaded" v-cloak>
                 <div class="inside_page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
                     <div class="main_container position_relative">
-                        <h2>Contest</h2>
+                        <h1>Contest</h1>
                     </div>
                 </div>
                 <div class="main_container">
@@ -121,7 +121,11 @@
                 
                 this.$store.dispatch("getData", "contests").then(response => {
                     this.currentContest = this.findContestByShowOnSlug(''); //Add Contest URL
-                    this.dataLoaded = true;
+                    if (this.currentContest) {
+                        this.dataLoaded = true;
+                    } else {
+                        this.$router.replace({ path: '/' });
+                    }
                 }, error => {
                     console.error("Could not retrieve data from server. Please check internet connection and try again.");
                 });
