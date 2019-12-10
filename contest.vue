@@ -60,7 +60,7 @@
         						<div class="form-inline row margin_40">
         						    <div class="col-xs-12">
         						        <label class="checkbox">
-                                            <input name="agree_terms" type="checkbox" required >
+                                            <input name="agree_terms" type="checkbox" required>
                                             I am over the age of 18.
                                         </label>
         						    </div>
