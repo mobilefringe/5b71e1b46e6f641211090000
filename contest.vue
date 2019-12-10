@@ -46,14 +46,14 @@
         							</div>
         							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('last_name')}">
         								<label class="visuallyhidden" for="last_name">Last Name</label>
-        								<input v-model="form_data.last_name" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="last_name" type="text" placeholder="Last Name" data-vv-delay="500" data-vv-as="last name">
+        								<input id="last_name" v-model="form_data.last_name" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="last_name" type="text" placeholder="Last Name" data-vv-delay="500" data-vv-as="last name">
         								<span v-show="errors.has('last_name')" class="form-control-feedback">{{ errors.first('last_name') }}</span>
         							</div>
         						</div>
         						<div class="form-group">
         							<div class="col-xs-12" :class="{'has-error': errors.has('email')}">
         								<label class="visuallyhidden" for="email">Email</label>
-        								<input v-model="form_data.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email" placeholder="Email" data-vv-delay="500" data-vv-as="email">
+        								<input id="email" v-model="form_data.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email" placeholder="Email" data-vv-delay="500" data-vv-as="email">
         								<span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
         							</div>
         						</div>
