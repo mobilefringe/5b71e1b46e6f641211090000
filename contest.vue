@@ -120,7 +120,7 @@
                 }); 
                 
                 this.$store.dispatch("getData", "contests").then(response => {
-                    this.currentContest = this.findContestByShowOnSlug(''); //Add Contest URL
+                    this.currentContest = this.findContestByShowOnSlug('greenvalley-contest'); //Add Contest URL
                     if (this.currentContest) {
                         this.dataLoaded = true;
                     } else {
