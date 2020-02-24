@@ -1,9 +1,9 @@
 <template>
     <div> <!-- without an outer container div this component template will not render -->
-        <image-popup></image-popup>
         <loading-spinner v-if="!dataLoaded"></loading-spinner>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
+                <image-popup-component></image-popup-component>
                 <div class="home_banner_container">
                     <div class="prev"></div>
                     <slick ref="slick" :options="slickOptions">
