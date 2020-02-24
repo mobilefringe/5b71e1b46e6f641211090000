@@ -23,7 +23,6 @@ $text: #000;
 /* *** GENERAL STYLES *** */
 html { 
     font-size: 16px;
-    overflow-x: hidden !important;
 }
 body {
     overflow-x: hidden !important;
