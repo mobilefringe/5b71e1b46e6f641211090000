@@ -38,6 +38,7 @@ require.config({
         'bootstrap-vue' : 'https://codecloud.cdn.speedyrails.net/sites/59347e776e6f64538f150000/text/javascript/1554736414383/bootstrap-vue',
         'masonry' : 'https://cdnjs.cloudflare.com/ajax/libs/masonry/4.0.0/masonry.pkgd.min',
         'vue-masonry-plugin' : 'https://cdn.jsdelivr.net/npm/vue-masonry@0.10.16/dist/vue-masonry-plugin',
+        'image-popup' : 'https://mmvue.codecloudapp.com/image_popup.vue?noext',
         // Dependencies for Map //
         'mousewheel' : 'https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min',
         'mapplic' : 'https://preview-mmvue.codecloudapp.com/mapplic',
