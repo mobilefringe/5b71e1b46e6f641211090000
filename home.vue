@@ -109,7 +109,7 @@
     </div>
 </template>
 <script>
-    define(["Vue", "vuex", "vue!vue-slick", "moment", "moment-timezone", "vue-moment", "vue!welcome_msg"], function (Vue, Vuex, slick, moment, tz, VueMoment, welcomeMessage) {
+    define(["Vue", "vuex", "vue!vue-slick", "moment", "moment-timezone", "vue-moment", "vue!welcome_msg", "vue!image-popup"], function (Vue, Vuex, slick, moment, tz, VueMoment, welcomeMessage, imagePopup) {
         return Vue.component("home-component", {
             template: template, // the variable template will be injected
             data: function() {
