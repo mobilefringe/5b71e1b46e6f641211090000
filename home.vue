@@ -297,7 +297,7 @@
                             this.$store.dispatch("getData", "banners"), 
                             this.$store.dispatch("getData","promotions"), 
                             this.$store.dispatch("getData", "events"), 
-                            this.$store.dispatch('LOAD_PAGE_DATA', { url: "https://greenvalley.mallmaverick.com/api/v4/greenvalley/social.json" })
+                            this.$store.dispatch('LOAD_PAGE_DATA', { url: "https://greenvalley.mallmaverickstaging.com/api/v4/greenvalley/social.json" })
                         ]);
                         return results;
                     } catch(e) {
