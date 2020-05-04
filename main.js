@@ -166,7 +166,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                             },
                             {
                                 name: "Donation Request Form",
-                                href: "https://www.mallmaverick.com/system/site_images/photos/000/042/559/original/The_District_at_Green_Valley_Ranch_Non-Profit_Donation_Form.pdf?1535656749",
+                                href: "//assets.mallmaverick.com/system/site_images/photos/000/042/559/original/The_District_at_Green_Valley_Ranch_Non-Profit_Donation_Form.pdf?1535656749",
                                 target: true
                             }
                         ]
