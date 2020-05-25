@@ -197,7 +197,7 @@
                                 flags = _.slice(flags, 0, 3);
                             }
                             value.store_flags = flags;
-                            
+                            console.log(flags)
                             store_list.push(value);
                         }
                     });
