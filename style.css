@@ -1685,13 +1685,13 @@ input[type=search] {
         }
     }
     .store_tag:first-child {
-        top: 5px;
+        top: 2px;
     }
     .store_tag:nth-child(2) {
-        top: 30px;
+        top: 25px;
     }
     .store_tag:nth-child(3) {
-        top: 55px;
+        top: 48px;
     }
     .store_phone {
         display: none;
