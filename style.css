@@ -1313,6 +1313,11 @@ $anim-speed: 0.3s;
         }
     }
 }
+
+.v-select .spinner {
+    font-size: 2rem !important;   
+}
+
 .map_category {
     margin-bottom: 10px;
     height: 35px;
